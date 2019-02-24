@@ -20,8 +20,8 @@ public class Person {
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
-		this.height = 5.5f;
-		this.weight = 60.1f;
+		this.height = 1.85f;
+		this.weight = 70.1f;
 	}
 
 	public String getName() {

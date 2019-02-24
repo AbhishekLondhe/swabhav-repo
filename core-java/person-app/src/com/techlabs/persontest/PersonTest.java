@@ -4,13 +4,10 @@ import com.techlabs.person.*;
 
 public class PersonTest {
 	public static void main(String args[]) {
-		Person p1 = new Person("abhishek", 22, GenderType.MALE, 90, 1.65f);
+		Person p1 = new Person("abhishek", 22, GenderType.MALE, 1.65f, 90f);
 		Person p2 = new Person("xyz", 24, GenderType.FEMALE);
-		//display(p1);
-		//p1.doWorkout();
-		//p1.eat();
 		display(p1);
-		//display(p2);
+		display(p2);
 	}
 
 	public static void display(Person p) {
