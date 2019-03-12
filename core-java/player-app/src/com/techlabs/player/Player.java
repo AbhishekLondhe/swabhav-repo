@@ -33,11 +33,12 @@ public class Player {
 	public int getAge() {
 		return age;
 	}
-	
-	public String toString() { 
-	    return "firstName: '" + this.firstName + "', lastName: '" + this.lastName + "', age: '" + this.age + "'";
-	} 
-	
+
+	@Override
+	public String toString() {
+		return "firstName:" + firstName + " lastName:" + lastName + " age " + age + " " + super.toString();
+	}
+
 	public int getPlayerId() {
 		return pId;
 	}
@@ -47,5 +48,13 @@ public class Player {
 			return this;
 		else
 			return p1;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		Player p = (Player) o;
+		if (this.firstName.equalsIgnoreCase(p.firstName))
+			return true;
+		return false;
 	}
 }
