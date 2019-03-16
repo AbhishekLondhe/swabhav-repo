@@ -8,19 +8,15 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
 
-public class Demo {
+public class WriteDemo {
 
 	public static void main(String args[]) throws IOException {
 		Properties p = new Properties();
-		//OutputStream os = new FileOutputStream("data.properties");
-		//p.setProperty("Username", "abhi");
-		//p.setProperty("passowrd", "0000");
+		OutputStream os = new FileOutputStream("data.properties");
+		p.setProperty("Username", "abhi");
+		p.setProperty("passowrd", "0000");
 		
-		//p.store(os, null);
-		InputStream is=new FileInputStream("data.properties");
-		p.load(is);
-		System.out.println(p.getProperty("Username"));
-		p.list(System.out);
+		p.store(os, null);
 		
 		
 	}
