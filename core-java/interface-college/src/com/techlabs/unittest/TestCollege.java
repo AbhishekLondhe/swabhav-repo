@@ -1,5 +1,7 @@
 package com.techlabs.unittest;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 import com.techlabs.college.BranchType;
@@ -11,7 +13,8 @@ public class TestCollege {
 	@Test
 	public void checkStudentOrNot() {
 		int Actual=student.getId();
-		int Expected=5;
+		int Expected=4;
+		assertEquals(Expected,Actual);
 	}
 	
 }
